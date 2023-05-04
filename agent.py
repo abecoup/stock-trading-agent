@@ -178,7 +178,7 @@ def save_results_to_csv(training_total, testing_total, PL, filename='results.csv
 
 def main():
     # Define the stock ticker and years to look back on
-    stock_ticker = 'ENPH'
+    stock_ticker = 'AAPL'
     years_ago = 6
     data = get_stock_data(stock_ticker, years_ago)
 
@@ -193,8 +193,8 @@ def main():
     action = 0
     last_value = 0.0
 
-    runs = 20
-    result_filename = 'results_ENPH.csv'
+    runs = 10
+    result_filename = 'results_AAPL.csv'
     while runs > 0:
 
         # ---- TRAINING ----
